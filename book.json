@@ -1,0 +1,23 @@
+{
+    "title": "思维模型大全",
+    "description": "各种思维模型的集合，包含决策、创新、心理学、管理学等领域的思维模型",
+    "author": "mikeyang01",
+    "language": "zh-hans",
+    "gitbook": "3.2.3",
+    "structure": {
+        "readme": "README.md",
+        "summary": "SUMMARY.md"
+    },
+    "plugins": [
+        "search",
+        "highlight",
+        "sharing",
+        "fontsettings",
+        "theme-default"
+    ],
+    "pluginsConfig": {
+        "theme-default": {
+            "showLevel": true
+        }
+    }
+}

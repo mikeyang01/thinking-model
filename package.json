@@ -1,0 +1,32 @@
+{
+  "name": "thinking-model",
+  "version": "1.0.0",
+  "description": "思维模型大全 - 各种思维模型的集合",
+  "main": "index.js",
+  "scripts": {
+    "serve": "gitbook serve",
+    "build": "gitbook build",
+    "install": "gitbook install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikeyang01/thinking-model.git"
+  },
+  "keywords": [
+    "思维模型",
+    "决策",
+    "创新",
+    "心理学",
+    "管理学",
+    "经济学"
+  ],
+  "author": "mikeyang01",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mikeyang01/thinking-model/issues"
+  },
+  "homepage": "https://github.com/mikeyang01/thinking-model#readme",
+  "devDependencies": {
+    "gitbook-cli": "^2.3.2"
+  }
+}
