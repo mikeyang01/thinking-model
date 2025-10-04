@@ -7,17 +7,5 @@
     "structure": {
         "readme": "README.md",
         "summary": "SUMMARY.md"
-    },
-    "plugins": [
-        "search",
-        "highlight",
-        "sharing",
-        "fontsettings",
-        "theme-default"
-    ],
-    "pluginsConfig": {
-        "theme-default": {
-            "showLevel": true
-        }
     }
 }
