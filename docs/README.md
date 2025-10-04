@@ -28,6 +28,8 @@
 npm install
 
 # 下载本地 docsify 资源到 docs/lib（可选，但推荐用于离线预览）
+# 从仓库根下载本地 docsify 资源到 docs/lib（可选，但推荐用于离线预览）
+# 在仓库根执行：
 node ./scripts/fetch-docsify.js
 
 # 本地启动 Docsify 服务（在 3000 端口）
