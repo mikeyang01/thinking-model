@@ -4,9 +4,11 @@
   "description": "思维模型大全 - 各种思维模型的集合",
   "main": "index.js",
   "scripts": {
-    "serve": "gitbook serve",
-    "build": "gitbook build",
-    "install": "gitbook install"
+    "serve": "docsify serve docs -p 3000",
+    "build": "node ./scripts/copy-to-docs.js && node ./scripts/fetch-docsify.js",
+    "deploy:local": "npm run build",
+    "deploy": "npm run build && npx gh-pages -d docs -t 1",
+    "install": "npm install"
   },
   "repository": {
     "type": "git",
@@ -27,6 +29,8 @@
   },
   "homepage": "https://github.com/mikeyang01/thinking-model#readme",
   "devDependencies": {
+    "docsify-cli": "^4.4.0",
+    "gh-pages": "^4.1.0",
     "gitbook-cli": "^2.3.2"
   }
 }
