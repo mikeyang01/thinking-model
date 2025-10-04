@@ -16,6 +16,29 @@
         subMaxLevel: 2
       };
     </script>
-    <script src="./lib/docsify.min.js"></script>
+    <script>
+      // Try to load local docsify, fallback to CDN if not present
+      (function () {
+        function loadScript(src) {
+          var s = document.createElement('script');
+          s.src = src;
+          s.defer = true;
+          document.head.appendChild(s);
+        }
+
+        var local = './lib/docsify.min.js';
+        var xhr = new XMLHttpRequest();
+        xhr.open('HEAD', local, true);
+        xhr.onload = function () {
+          if (xhr.status >= 200 && xhr.status < 400) {
+            loadScript(local);
+          } else {
+            loadScript('//unpkg.com/docsify/lib/docsify.min.js');
+          }
+        };
+        xhr.onerror = function () { loadScript('//unpkg.com/docsify/lib/docsify.min.js'); };
+        try { xhr.send(); } catch (e) { loadScript('//unpkg.com/docsify/lib/docsify.min.js'); }
+      })();
+    </script>
   </body>
 </html>

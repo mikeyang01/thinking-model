@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "serve": "docsify serve docs -p 3000",
-    "build": "node ./scripts/fetch-docsify.js"
+    "build": "node ./scripts/copy-to-docs.js && node ./scripts/fetch-docsify.js",
+    "deploy:local": "npm run build",
+  "deploy": "npm run build && npx gh-pages -d docs -t 1"
   },
   "repository": {
     "type": "git",
@@ -26,6 +28,8 @@
   },
   "homepage": "https://github.com/mikeyang01/thinking-model#readme",
   "devDependencies": {
-    "docsify-cli": "^4.4.0"
+    "docsify-cli": "^4.4.0",
+    "gh-pages": "^4.0.0",
+    "gitbook-cli": "^2.3.2"
   }
 }
